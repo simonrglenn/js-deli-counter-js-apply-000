@@ -29,4 +29,3 @@ const currentLine = currentKatzLine => {
       return "The line is currently empty."
   }
 }
-

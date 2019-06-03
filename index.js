@@ -3,6 +3,9 @@ const takeANumber = (currentKatzLine, name) => {
   return `Welcome, ${name}. You are number ${1+ currentKatzLine.indexOf(name)} in line.`;
 }
 
+let foreverKatzLine = [];
+
+
 const nowServing = currentKatzLine => {
   if (currentKatzLine.length > 0) {
     return `Currently serving ${currentKatzLine.shift()}.`;

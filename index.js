@@ -4,7 +4,10 @@ const takeANumber = (currentKatzLine, name) => {
 }
 
 let foreverKatzLine = [];
-
+const takeAForeverNumber = (foreverKatzLine, name) => {
+  foreverKatzLine.push(name);
+  return `Welcome, ${name}, you are the number ${1+ foreverKatzLine.indexOf(name)} person we have ever served at this restaurant.`
+}
 
 const nowServing = currentKatzLine => {
   if (currentKatzLine.length > 0) {
@@ -26,3 +29,4 @@ const currentLine = currentKatzLine => {
       return "The line is currently empty."
   }
 }
+
